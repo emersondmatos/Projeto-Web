@@ -1,9 +1,9 @@
-# Bootcamp Desenvolvimento Web Responsivo - Cardápio Digital Interativo
+# Bootcamp Desenvolvimento Web Responsivo - Cardápio Digital Responsivo
 
-Bem vindo ao projeto "Cardápio Digital Interativo", onde este projeto será desenvolvido no âmbito do Bootcamp de Desenvolvimento Web Responsivo, com o objetivo de aplicar na prática os conhecimentos adquiridos em programação, design responsivo e versionamento de código.
-A proposta será **criar uma solução voltada ao setor de alimentação (como lanchonetes, restaurantes e bares)**, trazendo maior interatividade entre o cliente e o estabelecimento por meio de um **Cardápio Digital**.
+Bem-vindo ao projeto **"Cardápio Digital Responsivo"**, onde este projeto será desenvolvido no âmbito do Bootcamp de Desenvolvimento Web Responsivo, com o objetivo de aplicar na prática os conhecimentos adquiridos em programação, design responsivo e versionamento de código.
+A proposta será **criar uma solução voltada ao setor de alimentação (como lanchonetes, restaurantes e bares)**, trazendo uma maior interatividade entre o cliente e o estabelecimento, por meio de um **Cardápio Digital Responsivo**.
 
-## Introdução
+## 📌 Introdução
 
 O projeto terá como foco a solução do problema da falta de interatividade e praticidade entre clientes e estabelecimentos de alimentação.
 
@@ -11,12 +11,12 @@ Atualmente, os cardápios físicos apresentam limitações como:
 
 - Dificuldade de atualização de preços e itens;
 - Falta/Pouca acessibilidade;
-- Reimpressão pelo desgaste físico;
+- Reimpressão pelo desgaste do cardápio físico;
 - Pouca interatividade ao cliente.
 
-Diante disso, será proposto o desenvolvimento de um **Cardápio Digital Responsivo**, com o papel fundamental em oferecer uma navegação simples, adaptada a diferentes dispositivos, permitindo futuras expansões, como pedidos online, integração com sistemas de pagamento e personalização de ofertas.
+Diante disso, propomos o desenvolvimento de um **Cardápio Digital Responsivo**, com o papel fundamental em oferecer uma navegação simples, adaptada a diferentes dispositivos, permitindo futuras expansões, como pedidos online, integração com sistemas de pagamento e personalização de ofertas.
 
-## Ideação
+## 💡 Ideação
 
 A ideia principal do nosso projeto é transformar o cardápio físico, em um **cardápio digital intuitivo, acessível e atrativo ao usuário.**
 
@@ -25,13 +25,13 @@ O cardápio apresentará:
 - Uma experiência agradável e interativa ao usuário;
 - Organização em categorias de forma clara e atraente;
 - Design responsivo, atrativo e de fácil navegação por ele;
-- Compatibilidade com diferentes plataformas (Tablets, notebooks, desktop e smatphones).
+- Compatibilidade com diferentes plataformas (tablets, notebooks, desktop e smartphones).
 
-## Prototipação, Tecnologias e Funcionamento
+## 🧩 Prototipação, Tecnologias e Funcionamento
 
-A prototipação do projeto será realizada em um Ambiente de Desenvolvimento Integrado (IDE), utilizando principalmente o Visual Studio Code (VSCode).
+A prototipação do projeto será realizada em um **Ambiente de Desenvolvimento Integrado (IDE)**, utilizando principalmente o **Visual Studio Code (VSCode).**
 
-As tecnologias previstas para o desenvolvimento e as etapas serão:
+As tecnologias previstas para o desenvolvimento, funções e etapas serão:
 
 - HTML5 -> Estruturação do projeto;
 - CSS3 -> Estilização do projeto e responsividade (Media Queries);
@@ -48,16 +48,16 @@ As tecnologias previstas para o desenvolvimento e as etapas serão:
 
 ## Conclusão
 
-Contudo, o **cardápio digital**, será criado como uma ferramenta que irá além da simples digitalização do cardápio físico, trazendo agilidade, praticidade e inovação a esse setor.
+Contudo, o **Cardápio Digital Responsivo**, será desenvolvido como uma solução de melhoria em comparação ao cardápio físico, trazendo **facilidade, praticidade e modernização** a esse setor.
 
 O projeto terá funcionalidade para:
 
 - Otimizar/Agilizar a gestão de informações do estabelecimento (Estabelecimento e Usuário);
-- Redução de custos com materias impressos;
-- Facilidade de atualizações (Preços e Adicionamento);
+- Redução de custos com cardápios impressos;
+- Facilidade de atualizações (Preços e Adicionamento de Itens);
 - Trazer a tecnologia e experiência a setores que não possuem ainda. Além de agradar a experiência com o cliente.
 
-Por fim, será densenvolvido um **Cardápio Digital Responsivo**, que oferecerá uma **navegação simples, adaptada a diferentes dispositivos, e permitirá futuras expansões, como pedidos online, integração com sistemas de pagamento e personalização de ofertas.**
+Por fim, o projeto **"Cardápio Digital Responsivo"**, busca em conciliar a **praticidade, a modernização e a experiência do usuário com a tecnologia**, a fim de promover um avanço em estabelecimentos do setor alimentício.
 
 ## Colaboradores
 
