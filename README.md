@@ -46,7 +46,7 @@ O projeto terá funcionalidade para:
 
 ## Desenvolvedores
 
-**Grupo 14 do Módulo – Bootcamp Desenvolvimento Web Responsivo**
+**Grupo 14 do Módulo – Bootcamp Desenvolvimento Web Responsivo; no curso de Ciência da Computação, Unisagrado**
 - Emerson Maia de Matos Toneti
 - Wender Toledo
 - Guilherme Augusto dos Santos
