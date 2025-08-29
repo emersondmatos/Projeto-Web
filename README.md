@@ -47,15 +47,15 @@ O projeto terá funcionalidade para:
 ## Desenvolvedores
 
 **Grupo 14 do Módulo – Bootcamp Desenvolvimento Web Responsivo**
-Emerson Maia de Matos Toneti
-Wender Toledo
-Guilherme Augusto dos Santos
-Guilherme Henrique Namen
-Murylo Kauffmann
-Daniel Augusto Thomasi
-Isabella Pereira Machado
-Julia Caroliny da Silva Bonicenha
-Felipe dos Anjos Ramos
-Hugo Caldas
+- Emerson Maia de Matos Toneti
+- Wender Toledo
+- Guilherme Augusto dos Santos
+- Guilherme Henrique Namen
+- Murylo Kauffmann
+- Daniel Augusto Thomasi
+- Isabella Pereira Machado
+- Julia Caroliny da Silva Bonicenha
+- Felipe dos Anjos Ramos
+- Hugo Caldas
 
 ## Obrigado!
