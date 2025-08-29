@@ -1,6 +1,6 @@
 # Bootcamp Desenvolvimento Web Responsivo - Cardápio Digital 
 
-Bem-vindo ao projeto **"Cardápio Digital "**, onde este projeto está sendo desenvolvido sobre o Bootcamp de Desenvolvimento Web Responsivo, com o objetivo de colocar em prática os conhecimentos adquiridos em programação, design responsivo e versionamento de código.
+Bem-vindo ao projeto **"Cardápio Digital"**, onde este projeto está sendo desenvolvido sobre o Bootcamp de Desenvolvimento Web Responsivo, com o objetivo de colocar em prática os conhecimentos adquiridos em programação, design responsivo e versionamento de código.
 
 ## O cenário atual
 Atualmente, os cardápios físicos apresentam limitações como:
