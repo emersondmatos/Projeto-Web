@@ -7,7 +7,7 @@ Este é nosso projeto de um cardápio digital, onde está sendo desenvolvido sob
 Atualmente, os cardápios físicos apresentam limitações como:
 
 - Dificuldade para manter os valores e itens do cardápio atualizados;
-- Acessibilidade baixa ou nula.
+- Acessibilidade baixa ou nula;
 - Reimpressão pelo desgaste do cardápio físico, e também para atualizar o cardápio;
 - Baixissíma interatividade com o cliente.
 
@@ -44,7 +44,7 @@ O projeto terá funcionalidade para:
 
 - Otimizar e melhorar o controle de itens disponíveis aos clientes;
 - Redução de custos com cardápios impressos;
-- Facilidade de atualizações;
+- Facilidade de atualizações.
 
 ## Desenvolvedores
 
