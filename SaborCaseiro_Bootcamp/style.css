@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Predefinições e Paletas */
+:root {
+  --color-neutral-0: #fff;
+  --color-primary1: #6b4226;
+  --color-primary2: #1d1d1d;
+  --color-primary3: #e9a209;
+  --color-secundary1: #f5ede3;
+  --color-secundary2: #eeeeee;
+  --color-secundary3: #f7e2c6;
+
+  --button: #556b2f;
+  --buttonHover: #4a5d26;
+  --shadow: rgba(0, 0, 0, 0.1);
+
+  --transicao: all 0.3s ease;
+}
+
+body {
+  background-color: var(--color-secundary1);
+  font-family: "Poppins", sans-serif;
+  color: var(--color-primary2);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #eee3d8;
+}
+
+.logo {
+  flex: 20%;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.logo h2 {
+  color: var(--color-primary1);
+  font-size: 2.2rem;
+}
+
+.menu {
+  flex: 75%;
+  text-align: right;
+  padding: 20px;
+}
+
+.menu a {
+  color: var(--color-primary2);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 20px 16px;
+}
+
+.menu a:hover {
+  color: var(--color-primary1);
+  border-top: 4px solid var(--color-primary1);
+}
+
+#btn-nav {
+  background-color: var(--button);
+  padding: 10px 25px;
+  color: var(--color-neutral-0);
+  border-radius: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+  transition: var(--transicao);
+}
+
+#btn-nav:hover {
+  background-color: var(--buttonHover);
+  border: none;
+  box-shadow: 0px 0px 10px 10px var(--shadow);
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.headline {
+  margin-left: 5%;
+  flex: 40%;
+}
+
+.headline h1 {
+  font-size: 4rem;
+  color: var(--color-primary2);
+}
+
+.headline h1 span {
+  color: var(--color-primary1);
+}
+
+.headline p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.btn-promo,
+.btn-menu,
+.btn-contact {
+  display: inline-block;
+  background: var(--button);
+  padding: 10px 25px;
+  color: var(--color-neutral-0);
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 3%;
+  transition: var(--transicao);
+}
+
+.btn-menu,
+.btn-contact {
+  margin-left: 3%;
+}
+
+.btn-promo:hover,
+.btn-menu:hover,
+.btn-contact:hover {
+  background-color: var(--buttonHover);
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 10px 10px var(--shadow);
+}
+
+.img-headline {
+  margin-right: 5%;
+  flex: 40%;
+  text-align: center;
+}
+
+/* Promoção */
+/* Cardápio */
+/* Contatos - Rodapé */
+.footer {
+  background-color: #eee3d8;
+  color: var(--color-primary2);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: var(--color-primary2);
+}
+
+.footer h2 span {
+  color: var(--color-primary1);
+}
+
+.footer p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  gap: 12px;
+}
+
+.contact a {
+  color: var(--color-primary2);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transicao);
+}
+
+.contact i {
+  margin-right: 7px;
+  color: var(--color-primary3);
+}
+
+.contact a:hover {
+  color: var(--color-primary3);
+}
+
+.btn-reserva {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: var(--button);
+  color: var(--color-neutral-0);
+  transition: var(--transicao);
+}
+
+.btn-reserva:hover {
+  background: var(--buttonHover);
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 10px 10px var(--shadow);
+}
+
+.copy {
+  margin-top: 25px;
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
