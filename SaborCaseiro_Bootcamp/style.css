@@ -147,6 +147,72 @@ body {
 }
 
 /* Promoção */
+.promocao {
+  padding: 80px 10%;
+  background-color: var(--color-secundary1); /* mesmo fundo do site */
+}
+
+.promo-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.promo-img {
+  flex: 1 1 350px;
+  text-align: center;
+}
+
+.promo-img img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px var(--shadow);
+}
+
+.promo-text {
+  flex: 1 1 400px;
+}
+
+.promo-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--color-primary2);
+}
+
+.promo-text h2 span {
+  color: var(--color-primary1);
+}
+
+.promo-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: var(--color-primary2);
+}
+
+.promo-text .preco {
+  color: var(--color-primary3);
+  font-weight: 700;
+}
+
+.btn-promo-dia {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--button);
+  color: var(--color-neutral-0);
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transicao);
+}
+
+.btn-promo-dia:hover {
+  background: var(--buttonHover);
+  transform: translateY(-4px);
+  box-shadow: 0px 0px 10px 6px var(--shadow);
+}
 /* Cardápio */
 /* Contatos - Rodapé */
 .footer {
