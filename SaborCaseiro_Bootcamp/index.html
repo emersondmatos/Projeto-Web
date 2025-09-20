@@ -25,7 +25,11 @@
         <a href="#promocao">Promoção</a>
         <a href="#comida">Cardápio</a>
         <a href="#contato">Contato</a>
-        <a id="btn-nav" href="#botao">Realizar Pedido</a>
+        <a id="btn-nav" href="#botao">
+          <i class="fas fa-shopping-cart" style="font-size: 0.7rem;"></i>
+          Realizar Pedido
+          <span id="carrinho-badge" class="carrinho-badge">0</span>
+        </a>
       </div>
       <!-- Menu Hambúrguer -->
       <div class="hamburger-menu" id="hamburger-menu">
@@ -47,10 +51,10 @@
       <div class="headline">
         <h1>Sabor <span>Caseiro</span></h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          voluptatem, recusandae laborum fugit fuga molestiae similique! Totam
-          explicabo corporis unde, quod vero esse autem aliquid deleniti
-          excepturi asperiores quam. Officia.
+          Bem-vindo ao Sabor Caseiro! Aqui você encontra os melhores hambúrgueres 
+          artesanais da cidade, feitos com ingredientes frescos e muito carinho. 
+          Nossos lanches são preparados na hora, com receitas que remetem ao 
+          verdadeiro sabor de casa. Venha saborear nossa tradição familiar!
         </p>
         <a href="#promocao" class="btn-promo">Promoção</a>
         <a href="#comida" class="btn-menu">Cardápio</a>
@@ -89,7 +93,7 @@
       <h3>Cardápio</h3>
       <h2>Lanches</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-nome="X-Bacon" data-preco="28.90">
           <img src="img/x-bacon.jpg" alt="Prato 1" />
           <h2>X-Bacon</h2>
           <p>
@@ -97,8 +101,12 @@
             queijo cheddar e presunto.
           </p>
           <span class="valor">R$ 28,90</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="X-Calabresa" data-preco="28.90">
           <img src="img/X-Calabresa.png" alt="Prato 2" />
           <h2>X-Calabresa</h2>
           <p>
@@ -106,8 +114,12 @@
             tomate, queijo cheddar e batata-palha.
           </p>
           <span class="valor">R$ 28,90</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="X-Salada" data-preco="24.99">
           <img src="img/hamburguer_cardapio.jpg" alt="Prato 3" />
           <h2>X-Salada</h2>
           <p>
@@ -115,6 +127,10 @@
             cheddar e cebola.
           </p>
           <span class="valor">R$ 24,99</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
       </div>
     </section>
@@ -122,15 +138,19 @@
     <section id="sobremesas" class="cardapio doces">
       <h2>Sobremesas</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-nome="Pudim de Leite Condensado" data-preco="8.90">
           <img src="img/Pudim_De_Leite_Condensado.png" />
           <h2>Pudim Cremoso de Leite Condensado</h2>
           <p>
             Clássico, cremoso e irresistível, com calda dourada de caramelo.
           </p>
           <span class="valor">R$ 8,90</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Brigadeiro Gigante" data-preco="6.90">
           <img src="img/Brigadeiro.png" />
           <h2>Brigadeiro Gigante de Padaria</h2>
           <p>
@@ -138,8 +158,12 @@
             granulado!
           </p>
           <span class="valor">R$ 6,90</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Rocambole de Chocolate" data-preco="9.99">
           <img src="img/doce.jpg" />
           <h2>Rocambole De Chocolate com Morangos</h2>
           <p>
@@ -147,6 +171,10 @@
             morango. Uma combinação irresistível!
           </p>
           <span class="valor">R$ 9,99</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
       </div>
     </section>
@@ -154,19 +182,27 @@
     <section id="bebidas" class="cardapio bebidas">
       <h2>Bebidas</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-nome="Coca-Cola 350ml" data-preco="6.50">
           <img src="img/Coca-cola_lata.png" />
           <h2>Coca-Cola lata 350ml</h2>
           <p>A clássica Coca-Cola geladinha para acompanhar seu lanche.</p>
           <span class="valor">R$ 6,50</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Cerveja Brahma 350ml" data-preco="6.00">
           <img src="img/cerveja-brahma-lata-350ml.jpg" />
           <h2>Cerveja Brahma lata 350ml</h2>
           <p>Cerveja Brahma, a ideal para deixar sua noite ainda melhor.</p>
           <span class="valor">R$ 6,00</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
-        <div class="card">
+        <div class="card" data-nome="Suco de Laranja 550ml" data-preco="8.99">
           <img src="img/suco.jpg" />
           <h2>Suco de Laranja 550ml</h2>
           <p>
@@ -174,9 +210,185 @@
             frescas e saborosas.
           </p>
           <span class="valor">R$ 8,99</span>
+          <button class="btn-add-carrinho">
+            <i class="fas fa-cart-plus"></i>
+            Adicionar ao Carrinho
+          </button>
         </div>
       </div>
     </section>
+    
+    <!-- Tela de Pedidos -->
+    <section id="botao" class="pedidos">
+      <div class="pedidos-container">
+        <h2>Realizar <span>Pedido</span></h2>
+        
+        <!-- Carrinho -->
+        <div class="carrinho-section">
+          <div class="carrinho-header">
+            <h3><i class="fas fa-shopping-cart"></i> Seu Carrinho</h3>
+            <span class="carrinho-contador">0 itens</span>
+          </div>
+          <div id="carrinho-itens" class="carrinho-itens">
+            <p class="carrinho-vazio">Seu carrinho está vazio. Adicione itens do cardápio!</p>
+          </div>
+          <div class="carrinho-total">
+            <strong>Total: R$ <span id="total-carrinho">0,00</span></strong>
+          </div>
+        </div>
+
+        <!-- Cardápio Rápido -->
+        <div class="cardapio-rapido">
+          <h3>Adicionar ao Pedido</h3>
+          <div class="categoria-tabs">
+            <button class="tab-btn active" data-categoria="pedido-lanches">Lanches</button>
+            <button class="tab-btn" data-categoria="pedido-sobremesas">Sobremesas</button>
+            <button class="tab-btn" data-categoria="pedido-bebidas">Bebidas</button>
+          </div>
+          
+          <!-- Lanches -->
+          <div class="categoria-content active" id="pedido-lanches">
+            <div class="item-pedido" data-nome="X-Bacon" data-preco="28.90">
+              <img src="img/x-bacon.jpg" alt="X-Bacon">
+              <div class="item-info">
+                <h4>X-Bacon</h4>
+                <p>Pão, hambúrguer 150g, bacon, alface, tomate, queijo e presunto</p>
+                <span class="preco">R$ 28,90</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+            
+            <div class="item-pedido" data-nome="X-Calabresa" data-preco="28.90">
+              <img src="img/X-Calabresa.png" alt="X-Calabresa">
+              <div class="item-info">
+                <h4>X-Calabresa</h4>
+                <p>Pão, hambúrguer 150g, calabresa, alface, tomate, queijo e batata-palha</p>
+                <span class="preco">R$ 28,90</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+            
+            <div class="item-pedido" data-nome="X-Salada" data-preco="24.99">
+              <img src="img/hamburguer_cardapio.jpg" alt="X-Salada">
+              <div class="item-info">
+                <h4>X-Salada</h4>
+                <p>Pão, hambúrguer 150g, alface, tomate, picles, queijo e cebola</p>
+                <span class="preco">R$ 24,99</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+          </div>
+
+          <!-- Sobremesas -->
+          <div class="categoria-content" id="pedido-sobremesas">
+            <div class="item-pedido" data-nome="Pudim de Leite Condensado" data-preco="8.90">
+              <img src="img/Pudim_De_Leite_Condensado.png" alt="Pudim">
+              <div class="item-info">
+                <h4>Pudim de Leite Condensado</h4>
+                <p>Clássico, cremoso e irresistível, com calda dourada de caramelo</p>
+                <span class="preco">R$ 8,90</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+            
+            <div class="item-pedido" data-nome="Brigadeiro Gigante" data-preco="6.90">
+              <img src="img/Brigadeiro.png" alt="Brigadeiro">
+              <div class="item-info">
+                <h4>Brigadeiro Gigante</h4>
+                <p>Macio, saboroso e coberto com muito granulado!</p>
+                <span class="preco">R$ 6,90</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+            
+            <div class="item-pedido" data-nome="Rocambole de Chocolate" data-preco="9.99">
+              <img src="img/doce.jpg" alt="Rocambole">
+              <div class="item-info">
+                <h4>Rocambole de Chocolate</h4>
+                <p>Massa fofinha, recheio cremoso e pedaços frescos de morango</p>
+                <span class="preco">R$ 9,99</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+          </div>
+
+          <!-- Bebidas -->
+          <div class="categoria-content" id="pedido-bebidas">
+            <div class="item-pedido" data-nome="Coca-Cola 350ml" data-preco="6.50">
+              <img src="img/Coca-cola_lata.png" alt="Coca-Cola">
+              <div class="item-info">
+                <h4>Coca-Cola 350ml</h4>
+                <p>A clássica Coca-Cola geladinha para acompanhar seu lanche</p>
+                <span class="preco">R$ 6,50</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+            
+            <div class="item-pedido" data-nome="Cerveja Brahma 350ml" data-preco="6.00">
+              <img src="img/cerveja-brahma-lata-350ml.jpg" alt="Cerveja Brahma">
+              <div class="item-info">
+                <h4>Cerveja Brahma 350ml</h4>
+                <p>Cerveja Brahma, ideal para deixar sua noite ainda melhor</p>
+                <span class="preco">R$ 6,00</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+            
+            <div class="item-pedido" data-nome="Suco de Laranja 550ml" data-preco="8.99">
+              <img src="img/suco.jpg" alt="Suco de Laranja">
+              <div class="item-info">
+                <h4>Suco de Laranja 550ml</h4>
+                <p>Suco natural de laranja refrescante e feito na hora</p>
+                <span class="preco">R$ 8,99</span>
+              </div>
+              <button class="btn-adicionar">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário de Dados -->
+        <div class="formulario-pedido">
+          <h3>Dados para Entrega</h3>
+          <form id="form-pedido">
+            <div class="form-group">
+              <label for="nome">Nome Completo*</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="telefone">Telefone/WhatsApp*</label>
+              <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="endereco">Endereço Completo*</label>
+              <textarea id="endereco" name="endereco" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="observacoes">Observações</label>
+              <textarea id="observacoes" name="observacoes" rows="2" placeholder="Alguma observação especial?"></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="pagamento">Forma de Pagamento*</label>
+              <select id="pagamento" name="pagamento" required>
+                <option value="">Selecione...</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="cartao">Cartão na Entrega</option>
+                <option value="pix">PIX</option>
+              </select>
+            </div>
+            
+            <button type="submit" class="btn-finalizar" disabled>
+              <i class="fab fa-whatsapp"></i>
+              Finalizar Pedido via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
     <!-- Contato/Rodapé -->
     <section id="contato">
       <div class="footer">
@@ -280,6 +492,266 @@
           }
         }
       });
+
+      // ============ SISTEMA DE CARRINHO E PEDIDOS ============
+      
+      // Variáveis globais
+      let carrinho = [];
+      let totalCarrinho = 0;
+
+      // Elementos DOM
+      const carrinhoItens = document.getElementById('carrinho-itens');
+      const carrinhoContador = document.querySelector('.carrinho-contador');
+      const totalCarrinhoElement = document.getElementById('total-carrinho');
+      const btnFinalizar = document.querySelector('.btn-finalizar');
+      const formPedido = document.getElementById('form-pedido');
+      const carrinhoBadge = document.getElementById('carrinho-badge');
+
+      // Funções do carrinho
+      function atualizarCarrinho() {
+        // Limpar itens atuais
+        carrinhoItens.innerHTML = '';
+        
+        if (carrinho.length === 0) {
+          carrinhoItens.innerHTML = '<p class="carrinho-vazio">Seu carrinho está vazio. Adicione itens do cardápio!</p>';
+          carrinhoContador.textContent = '0 itens';
+          totalCarrinhoElement.textContent = '0,00';
+          btnFinalizar.disabled = true;
+          return;
+        }
+
+        // Adicionar itens do carrinho
+        carrinho.forEach((item, index) => {
+          const itemElement = document.createElement('div');
+          itemElement.className = 'carrinho-item';
+          itemElement.innerHTML = `
+            <div class="carrinho-item-info">
+              <h4>${item.nome}</h4>
+              <div class="carrinho-item-preco">R$ ${item.preco.toFixed(2).replace('.', ',')}</div>
+            </div>
+            <div class="carrinho-item-controls">
+              <button class="btn-quantidade" onclick="diminuirQuantidade(${index})">-</button>
+              <span class="quantidade">${item.quantidade}</span>
+              <button class="btn-quantidade" onclick="aumentarQuantidade(${index})">+</button>
+              <button class="btn-quantidade" onclick="removerItem(${index})" style="background: #dc3545; margin-left: 10px;">×</button>
+            </div>
+          `;
+          carrinhoItens.appendChild(itemElement);
+        });
+
+        // Atualizar contador e total
+        const totalItens = carrinho.reduce((sum, item) => sum + item.quantidade, 0);
+        carrinhoContador.textContent = `${totalItens} ${totalItens === 1 ? 'item' : 'itens'}`;
+        
+        // Atualizar badge da navbar
+        if (totalItens > 0) {
+          carrinhoBadge.textContent = totalItens;
+          carrinhoBadge.classList.remove('hidden');
+        } else {
+          carrinhoBadge.classList.add('hidden');
+        }
+        
+        totalCarrinho = carrinho.reduce((sum, item) => sum + (item.preco * item.quantidade), 0);
+        totalCarrinhoElement.textContent = totalCarrinho.toFixed(2).replace('.', ',');
+        
+        // Habilitar botão finalizar se carrinho não estiver vazio
+        btnFinalizar.disabled = carrinho.length === 0;
+      }
+
+      function adicionarAoCarrinho(nome, preco) {
+        const itemExistente = carrinho.find(item => item.nome === nome);
+        
+        if (itemExistente) {
+          itemExistente.quantidade++;
+        } else {
+          carrinho.push({
+            nome: nome,
+            preco: preco,
+            quantidade: 1
+          });
+        }
+        
+        atualizarCarrinho();
+        
+        // Feedback visual
+        mostrarNotificacao(`${nome} adicionado ao carrinho!`);
+      }
+
+      function aumentarQuantidade(index) {
+        carrinho[index].quantidade++;
+        atualizarCarrinho();
+      }
+
+      function diminuirQuantidade(index) {
+        if (carrinho[index].quantidade > 1) {
+          carrinho[index].quantidade--;
+        } else {
+          carrinho.splice(index, 1);
+        }
+        atualizarCarrinho();
+      }
+
+      function removerItem(index) {
+        const item = carrinho[index];
+        carrinho.splice(index, 1);
+        atualizarCarrinho();
+        mostrarNotificacao(`${item.nome} removido do carrinho!`);
+      }
+
+      // Sistema de notificações
+      function mostrarNotificacao(mensagem) {
+        // Criar elemento de notificação
+        const notificacao = document.createElement('div');
+        notificacao.style.cssText = `
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          background: var(--button);
+          color: white;
+          padding: 15px 20px;
+          border-radius: 10px;
+          box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+          z-index: 10000;
+          font-weight: 600;
+          transform: translateX(100%);
+          transition: transform 0.3s ease;
+        `;
+        notificacao.textContent = mensagem;
+        
+        document.body.appendChild(notificacao);
+        
+        // Animar entrada
+        setTimeout(() => {
+          notificacao.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Remover após 3 segundos
+        setTimeout(() => {
+          notificacao.style.transform = 'translateX(100%)';
+          setTimeout(() => {
+            document.body.removeChild(notificacao);
+          }, 300);
+        }, 3000);
+      }
+
+      // Event listeners para botões de adicionar
+      document.querySelectorAll('.btn-adicionar').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const itemPedido = this.closest('.item-pedido');
+          const nome = itemPedido.dataset.nome;
+          const preco = parseFloat(itemPedido.dataset.preco);
+          
+          adicionarAoCarrinho(nome, preco);
+        });
+      });
+
+      // Event listeners para botões "Adicionar ao Carrinho" do cardápio principal
+      document.querySelectorAll('.btn-add-carrinho').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const card = this.closest('.card');
+          const nome = card.dataset.nome;
+          const preco = parseFloat(card.dataset.preco);
+          
+          adicionarAoCarrinho(nome, preco);
+          
+          // Scroll suave para a seção de pedidos
+          document.getElementById('botao').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        });
+      });
+
+      // Sistema de tabs
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const categoria = this.dataset.categoria;
+          
+          // Remover classe active de todos os botões e conteúdos
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          document.querySelectorAll('.categoria-content').forEach(c => c.classList.remove('active'));
+          
+          // Adicionar classe active ao botão clicado e conteúdo correspondente
+          this.classList.add('active');
+          document.getElementById(categoria).classList.add('active');
+        });
+      });
+
+      // Validação do formulário
+      const campos = ['nome', 'telefone', 'endereco', 'pagamento'];
+      
+      function validarFormulario() {
+        const todosPreenchidos = campos.every(campo => {
+          const elemento = document.getElementById(campo);
+          return elemento.value.trim() !== '';
+        });
+        
+        btnFinalizar.disabled = !todosPreenchidos || carrinho.length === 0;
+      }
+
+      // Event listeners para campos do formulário
+      campos.forEach(campo => {
+        document.getElementById(campo).addEventListener('input', validarFormulario);
+        document.getElementById(campo).addEventListener('change', validarFormulario);
+      });
+
+      // Submissão do formulário
+      formPedido.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Coletar dados do formulário
+        const nome = document.getElementById('nome').value;
+        const telefone = document.getElementById('telefone').value;
+        const endereco = document.getElementById('endereco').value;
+        const observacoes = document.getElementById('observacoes').value;
+        const pagamento = document.getElementById('pagamento').value;
+        
+        // Gerar resumo do pedido
+        let resumoPedido = `🍔 *NOVO PEDIDO - SABOR CASEIRO* 🍔\n\n`;
+        resumoPedido += `👤 *Cliente:* ${nome}\n`;
+        resumoPedido += `📞 *Telefone:* ${telefone}\n`;
+        resumoPedido += `📍 *Endereço:* ${endereco}\n`;
+        resumoPedido += `💳 *Pagamento:* ${pagamento}\n\n`;
+        
+        resumoPedido += `🛒 *ITENS DO PEDIDO:*\n`;
+        carrinho.forEach(item => {
+          const subtotal = (item.preco * item.quantidade).toFixed(2).replace('.', ',');
+          resumoPedido += `• ${item.quantidade}x ${item.nome} - R$ ${subtotal}\n`;
+        });
+        
+        resumoPedido += `\n💰 *TOTAL: R$ ${totalCarrinho.toFixed(2).replace('.', ',')}*\n`;
+        
+        if (observacoes) {
+          resumoPedido += `\n📝 *Observações:* ${observacoes}\n`;
+        }
+        
+        resumoPedido += `\n_Pedido realizado pelo site Sabor Caseiro_ 🏠`;
+        
+        // Enviar via WhatsApp
+        const numeroWhatsApp = '5514997493269';
+        const mensagemCodificada = encodeURIComponent(resumoPedido);
+        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+        
+        // Abrir WhatsApp
+        window.open(urlWhatsApp, '_blank');
+        
+        // Mostrar confirmação
+        mostrarNotificacao('Redirecionando para WhatsApp...');
+        
+        // Limpar carrinho após alguns segundos (opcional)
+        setTimeout(() => {
+          if (confirm('Pedido enviado! Deseja limpar o carrinho?')) {
+            carrinho = [];
+            atualizarCarrinho();
+            formPedido.reset();
+            validarFormulario();
+          }
+        }, 2000);
+      });
+
+      // Inicializar
+      carrinhoBadge.classList.add('hidden');
+      atualizarCarrinho();
     </script>
   </body>
 </html>
