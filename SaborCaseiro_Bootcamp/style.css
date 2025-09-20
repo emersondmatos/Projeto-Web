@@ -173,9 +173,9 @@ body {
   display: flex;
 }
 
-/* Media Queries - Dispositivos Móveis */
-@media screen and (max-width: 768px) {
-  /* Sempre mostrar menu hambúrguer em mobile */
+/* Media Queries - Dispositivos Móveis e Tablets */
+@media screen and (max-width: 1024px) {
+
   .navbar .menu {
     display: none !important;
   }
@@ -183,13 +183,11 @@ body {
   .navbar .hamburger-menu {
     display: flex !important;
   }
-  
-  /* Ajustar altura da navbar em mobile */
+
   .navbar {
     height: 70px;
   }
   
-  /* Ajustar logo em mobile */
   .logo {
     flex: 70%;
   }
@@ -198,12 +196,57 @@ body {
     font-size: 1.8rem;
   }
   
-  /* Ajustar menu mobile para telas menores */
   .mobile-menu {
     top: 70px;
   }
+}
+
+/* Media Queries específicas para tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo h2 {
+    font-size: 2rem;
+  }
   
-  /* Ajustar cabeçalho em mobile */
+  .header {
+    flex-direction: row;
+    padding-top: 70px;
+  }
+  
+  .headline {
+    flex: 40%;
+    margin-left: 5%;
+    order: 1;
+  }
+  
+  .headline h1 {
+    font-size: 3.5rem;
+  }
+  
+  .headline p {
+    text-align: left;
+  }
+  
+  .img-headline {
+    flex: 40%;
+    margin-right: 5%;
+    order: 2;
+  }
+  
+  .btn-promo,
+  .btn-menu,
+  .btn-contact {
+    display: inline-block;
+    margin-top: 3%;
+    width: auto;
+  }
+  
+  .btn-menu,
+  .btn-contact {
+    margin-left: 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
     padding-top: 70px;
@@ -231,7 +274,6 @@ body {
     order: 1;
   }
   
-  /* Botões do cabeçalho em mobile */
   .btn-promo,
   .btn-menu,
   .btn-contact {
@@ -248,7 +290,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  /* Telas muito pequenas */
   .logo h2 {
     font-size: 1.5rem;
   }
