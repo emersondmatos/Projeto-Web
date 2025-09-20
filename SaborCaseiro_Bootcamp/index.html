@@ -27,6 +27,20 @@
         <a href="#contato">Contato</a>
         <a id="btn-nav" href="#botao">Realizar Pedido</a>
       </div>
+      <!-- Menu Hambúrguer -->
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Menu Mobile -->
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#inicio">Início</a>
+        <a href="#promocao">Promoção</a>
+        <a href="#comida">Cardápio</a>
+        <a href="#contato">Contato</a>
+        <a href="#botao">Realizar Pedido</a>
+      </div>
     </nav>
     <!-- Cabeçalho -->
     <header id="inicio" class="header">
@@ -194,5 +208,82 @@
         <p class="copy">&copy; 2025 Sabor Caseiro</p>
       </div>
     </section>
+
+    <script>
+      // Função para detectar se é dispositivo móvel
+      function isMobile() {
+        return window.innerWidth <= 768;
+      }
+
+      // Detecção de scroll para mostrar/esconder menu hambúrguer
+      window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const scrollPosition = window.scrollY;
+        
+        // Em desktop, só mostra hambúrguer após scroll
+        // Em mobile, sempre mostra hambúrguer
+        if (!isMobile()) {
+          if (scrollPosition > 100) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+            // Fechar menu mobile quando voltar ao topo
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            mobileMenu.style.display = 'none';
+            hamburgerMenu.classList.remove('active');
+          }
+        }
+      });
+
+      // Detecção de redimensionamento da tela
+      window.addEventListener('resize', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        
+        // Se mudou para desktop, fechar menu mobile
+        if (!isMobile()) {
+          mobileMenu.style.display = 'none';
+          hamburgerMenu.classList.remove('active');
+        }
+      });
+
+      // Toggle do menu mobile
+      document.getElementById('hamburger-menu').addEventListener('click', function() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        
+        hamburgerMenu.classList.toggle('active');
+        
+        if (mobileMenu.style.display === 'flex') {
+          mobileMenu.style.display = 'none';
+        } else {
+          mobileMenu.style.display = 'flex';
+        }
+      });
+
+      // Fechar menu mobile ao clicar em um link
+      document.querySelectorAll('.mobile-menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          const mobileMenu = document.getElementById('mobile-menu');
+          const hamburgerMenu = document.getElementById('hamburger-menu');
+          mobileMenu.style.display = 'none';
+          hamburgerMenu.classList.remove('active');
+        });
+      });
+
+      // Fechar menu mobile ao clicar fora dele
+      document.addEventListener('click', function(event) {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        
+        if (!hamburgerMenu.contains(event.target) && !mobileMenu.contains(event.target)) {
+          if (mobileMenu.style.display === 'flex') {
+            mobileMenu.style.display = 'none';
+            hamburgerMenu.classList.remove('active');
+          }
+        }
+      });
+    </script>
   </body>
 </html>
