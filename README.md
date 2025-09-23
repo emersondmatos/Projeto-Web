@@ -45,7 +45,7 @@ Para alcançar esse objetivo, utilizamos as seguintes tecnlogias:
 git clone https://github.com/emersondmatos/Sabor-Caseiro-Projeto-Unisagrado.git
 ```
 
-2- Navegue até a pasta do **projeto**:
+2- Navegue até a pasta do **projeto**.
 
 3- Abra o arquivo **index.html** no seu navegador.
 
