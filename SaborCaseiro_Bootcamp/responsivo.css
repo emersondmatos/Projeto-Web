@@ -16,7 +16,7 @@
   }
 
   .menu a {
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #cfc3ad;
   }
 
@@ -27,7 +27,7 @@
   }
 
   #btn-nav {
-    margin: 15px auto;
+    margin: 10px auto;
     display: inline-block;
   }
 
@@ -71,7 +71,7 @@
   }
 
   .menu a {
-    padding: 15px;
+    padding: 10px;
     border-bottom: 1px solid #cfc3ad;
   }
 
@@ -82,7 +82,7 @@
   }
 
   #btn-nav {
-    margin: 15px auto;
+    margin: 10px auto;
     display: inline-block;
   }
 
@@ -122,4 +122,53 @@
   .cards {
     justify-content: center;
   }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 0 3%;
+    }
+    
+    .navbar .menu {
+        display: none;
+    }
+    
+    .navbar .menu-hamburguer {
+        display: flex;
+    }
+    
+    .logo h2 {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .navbar .menu {
+        display: flex !important;
+    }
+    
+    .navbar .menu-hamburguer {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 80px;
+    }
+    
+    .menu.active {
+        top: 80px;
+    }
+    
+    .logo h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h2 {
+        font-size: 1.6rem;
+    }
 }
