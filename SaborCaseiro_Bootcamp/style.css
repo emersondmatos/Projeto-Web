@@ -32,20 +32,18 @@ body {
 /* Navbar */
 .navbar {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   z-index: 1000;
   background-color: #eee3d8;
+  padding: 0 2%;
 }
 
 .logo {
-  flex: 20%;
-  margin-left: 5%;
-  text-align: left;
+  flex: none;
 }
 
 .logo h2 {
@@ -54,16 +52,17 @@ body {
 }
 
 .menu {
-  flex: 75%;
-  text-align: right;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu a {
   color: var(--color-primary2);
   text-decoration: none;
   font-weight: 600;
-  padding: 20px 16px;
+  padding: 10px 16px;
+  transition: var(--transicao);
 }
 
 .menu a:hover {
@@ -73,13 +72,14 @@ body {
 
 #btn-nav {
   background-color: var(--button);
-  padding: 10px 25px;
+  padding: 8px 16px;
   color: var(--color-neutral-0);
-  border-radius: 20px;
-  margin-right: 5%;
-  margin-left: 5%;
+  border-radius: 15px;
+  margin-left: 10px;
   transition: var(--transicao);
   font-weight: 600;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 #btn-nav:hover {
@@ -88,11 +88,129 @@ body {
   box-shadow: 0px 0px 10px 10px var(--shadow);
 }
 
+/* Menu Hambúrguer - Apenas Mobile */
 .menu-hamburguer {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: var(--color-primary1);
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1002;
+}
+
+.menu-hamburguer span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-primary1);
+    margin: 3px 0;
+    transition: 0.3s ease;
+    transform-origin: center;
+}
+
+/* Animação das barrinhas quando ativo */
+.menu-hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-hamburguer.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.menu-hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Estados da navbar - APENAS MOBILE */
+.navbar.mobile .menu {
+    display: none;
+}
+
+.navbar.mobile .menu-hamburguer {
+    display: flex;
+}
+
+/* Menu mobile ativo */
+.menu.active {
+    display: flex !important;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-secundary1);
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1001;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu.active a {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    transition: var(--transicao);
+}
+
+.menu.active a:hover {
+    background-color: var(--color-primary3);
+    color: white;
+    border-top: none;
+}
+
+/* Media queries - APENAS MOBILE (≤768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 3%;
+    }
+    
+    .navbar .menu {
+        display: none;
+    }
+    
+    .navbar .menu-hamburguer {
+        display: flex;
+    }
+    
+    .logo h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Desktop e Tablet - SEMPRE menu normal */
+@media (min-width: 769px) {
+    .navbar .menu {
+        display: flex !important;
+    }
+    
+    .navbar .menu-hamburguer {
+        display: none !important;
+    }
+}
+
+/* Responsividade adicional para telas muito pequenas */
+@media (max-width: 480px) {
+    .navbar {
+        height: 80px;
+    }
+    
+    .menu.active {
+        top: 80px;
+    }
+    
+    .logo h2 {
+        font-size: 1.6rem;
+    }
 }
 
 /* Cabeçalho */
