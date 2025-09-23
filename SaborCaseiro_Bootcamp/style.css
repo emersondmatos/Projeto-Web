@@ -88,7 +88,7 @@ body {
   box-shadow: 0px 0px 10px 10px var(--shadow);
 }
 
-/* Menu Hambúrguer - Apenas Mobile */
+/* Menu Hambúrguer */
 .menu-hamburguer {
     display: none;
     flex-direction: column;
@@ -106,7 +106,6 @@ body {
     transform-origin: center;
 }
 
-/* Animação das barrinhas quando ativo */
 .menu-hamburguer.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
 }
@@ -120,7 +119,6 @@ body {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Estados da navbar - APENAS MOBILE */
 .navbar.mobile .menu {
     display: none;
 }
@@ -129,7 +127,6 @@ body {
     display: flex;
 }
 
-/* Menu mobile ativo */
 .menu.active {
     display: flex !important;
     position: fixed;
@@ -168,8 +165,8 @@ body {
     border-top: none;
 }
 
-/* Media queries - APENAS MOBILE (≤768px) */
-@media (max-width: 768px) {
+/* Media Queries */
+@media (max-width: 1024px) {
     .navbar {
         padding: 0 3%;
     }
@@ -183,12 +180,11 @@ body {
     }
     
     .logo h2 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 }
 
-/* Desktop e Tablet - SEMPRE menu normal */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .navbar .menu {
         display: flex !important;
     }
@@ -198,8 +194,7 @@ body {
     }
 }
 
-/* Responsividade adicional para telas muito pequenas */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .navbar {
         height: 80px;
     }
@@ -208,6 +203,12 @@ body {
         top: 80px;
     }
     
+    .logo h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
     .logo h2 {
         font-size: 1.6rem;
     }
@@ -343,6 +344,7 @@ body {
   transform: translateY(-4px);
   box-shadow: 0px 0px 10px 10px var(--shadow);
 }
+
 /* Cardápio */
 .cardapio {
   text-align: center;
@@ -427,7 +429,7 @@ body {
   background: #eee3d8;
 }
 
-/* Contatos - Rodapé */
+/* Contato */
 .redes-sociais {
   background-color: #eee3d8;
   color: var(--color-primary2);
