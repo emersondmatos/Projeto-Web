@@ -37,6 +37,12 @@ Para alcançar esse objetivo, utilizamos as seguintes tecnlogias:
 
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /> <img src="https://img.shields.io/badge/VSCode-0078d7?style=for-the-badge&logo=visual-studio-code&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
 
+### Requisitos
+- Qualquer SO moderno;
+- Qualquer navegador moderno;
+- 1GB RAM;
+- 50MB espaço livre.
+
 ## Utilização
 
 1- Sua instalação não é um processo complexo, basta clonar o repositório para sua máquina local:
@@ -70,12 +76,12 @@ Grupo 14 do Módulo – Bootcamp Desenvolvimento Web - Unisagrado <br>
 - Emerson Maia de Matos Toneti
 - Wender Aparecido Toledo
 - Guilherme Augusto dos Santos
-- Guilherme Henrique Namen
-- Murylo Kauffmann
 - Daniel Augusto Thomasi
+- Murylo Kauffmann
+- Felipe dos Anjos Ramos
+- Guilherme Henrique Namen
 - Isabella Pereira Machado
 - Julia Caroliny da Silva Bonicenha
-- Felipe dos Anjos Ramos
 - Hugo Caldas
 
 Obrigado!
